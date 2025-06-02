@@ -31,9 +31,20 @@ cd cli-mupd
 makepkg -si
 ```
 
-### Manual (From GitHub)
+### Ubuntu / Debian
 
 ```bash
+sudo apt install git build-essential
+git clone https://github.com/username/cli-mupd.git
+cd cli-mupd
+make
+sudo cp cli-mupd /usr/local/bin/
+```
+
+### Fedora
+
+```bash
+sudo dnf install git make gcc
 git clone https://github.com/username/cli-mupd.git
 cd cli-mupd
 make
